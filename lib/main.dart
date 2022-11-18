@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/screens/details_screen.dart';
-import 'package:myapp/screens/home_screen.dart';
-import 'package:myapp/screens/library_screen.dart';
-import 'package:myapp/screens/login_screen.dart';
-import 'package:myapp/screens/signup_screen.dart';
+import 'package:myapp/game_details.dart';
+import 'package:myapp/home_screen.dart';
+import 'package:myapp/signup.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,11 +14,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Gameshop',
+        title: 'Atelier Flutter',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.red,
+          primarySwatch: Colors.blue,
         ),
-        home: const LoginScreen());
+        home: const SignUp());
   }
 }
